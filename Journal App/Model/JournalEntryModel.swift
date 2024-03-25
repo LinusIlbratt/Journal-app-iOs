@@ -13,7 +13,7 @@ class JournalEntry {
     
     init(content: String) {
         self.content = content
-        date = Date()
+        self.date = Date()
     }
     
     init(content: String, date: Date) {
