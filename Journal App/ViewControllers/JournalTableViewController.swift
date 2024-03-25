@@ -40,7 +40,7 @@ class JournalTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "journalEntryCell", for: indexPath)
 
         let journalEntry = journal.entry(index: indexPath.row)
-        cell.textLabel?.text = journalEntry?.content
+        cell.textLabel?.text = journalEntry?.date
 
         return cell
     }

@@ -11,11 +11,14 @@ class ShowJournalEntryViewController: UIViewController {
     
     var journalEntry : JournalEntry?
 
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     @IBOutlet weak var entryTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        navBar.title = journalEntry?.date
         entryTextView.text = journalEntry?.content
     }
 
