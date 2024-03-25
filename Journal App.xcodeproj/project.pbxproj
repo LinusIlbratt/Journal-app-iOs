@@ -99,13 +99,13 @@
 		1BA26A992BB17D50001ACAA8 /* Journal App */ = {
 			isa = PBXGroup;
 			children = (
+				1BA26ACC2BB18055001ACAA8 /* ViewControllers */,
 				1BA26A9A2BB17D50001ACAA8 /* AppDelegate.swift */,
 				1BA26A9C2BB17D50001ACAA8 /* SceneDelegate.swift */,
 				1BA26AA02BB17D50001ACAA8 /* Main.storyboard */,
 				1BA26AA32BB17D51001ACAA8 /* Assets.xcassets */,
 				1BA26AA52BB17D51001ACAA8 /* LaunchScreen.storyboard */,
 				1BA26AA82BB17D51001ACAA8 /* Info.plist */,
-				1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */,
 			);
 			path = "Journal App";
 			sourceTree = "<group>";
@@ -125,6 +125,14 @@
 				1BA26ABD2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift */,
 			);
 			path = "Journal AppUITests";
+			sourceTree = "<group>";
+		};
+		1BA26ACC2BB18055001ACAA8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
