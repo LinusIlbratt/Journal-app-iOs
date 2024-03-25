@@ -16,6 +16,7 @@
 		1BA26ABC2BB17D51001ACAA8 /* Journal_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ABB2BB17D51001ACAA8 /* Journal_AppUITests.swift */; };
 		1BA26ABE2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ABD2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift */; };
 		1BA26ACB2BB17FB1001ACAA8 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */; };
+		1BA26ACF2BB1816A001ACAA8 /* JournalEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1BA26ABB2BB17D51001ACAA8 /* Journal_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppUITests.swift; sourceTree = "<group>"; };
 		1BA26ABD2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		1BA26A992BB17D50001ACAA8 /* Journal App */ = {
 			isa = PBXGroup;
 			children = (
+				1BA26ACD2BB1814E001ACAA8 /* Model */,
 				1BA26ACC2BB18055001ACAA8 /* ViewControllers */,
 				1BA26A9A2BB17D50001ACAA8 /* AppDelegate.swift */,
 				1BA26A9C2BB17D50001ACAA8 /* SceneDelegate.swift */,
@@ -133,6 +136,14 @@
 				1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1BA26ACD2BB1814E001ACAA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA26ACF2BB1816A001ACAA8 /* JournalEntryModel.swift in Sources */,
 				1BA26A9B2BB17D50001ACAA8 /* AppDelegate.swift in Sources */,
 				1BA26ACB2BB17FB1001ACAA8 /* JournalTableViewController.swift in Sources */,
 				1BA26A9D2BB17D50001ACAA8 /* SceneDelegate.swift in Sources */,
