@@ -19,6 +19,7 @@
 		1BA26ACF2BB1816A001ACAA8 /* JournalEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */; };
 		1BA26AD12BB184F7001ACAA8 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26AD02BB184F7001ACAA8 /* Journal.swift */; };
 		1BA26AD32BB18A9E001ACAA8 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26AD22BB18A9E001ACAA8 /* NewEntryViewController.swift */; };
+		1BA26AD52BB1A48A001ACAA8 /* ShowJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26AD42BB1A48A001ACAA8 /* ShowJournalEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryModel.swift; sourceTree = "<group>"; };
 		1BA26AD02BB184F7001ACAA8 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		1BA26AD22BB18A9E001ACAA8 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		1BA26AD42BB1A48A001ACAA8 /* ShowJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowJournalEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */,
 				1BA26AD22BB18A9E001ACAA8 /* NewEntryViewController.swift */,
+				1BA26AD42BB1A48A001ACAA8 /* ShowJournalEntryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				1BA26A9B2BB17D50001ACAA8 /* AppDelegate.swift in Sources */,
 				1BA26ACB2BB17FB1001ACAA8 /* JournalTableViewController.swift in Sources */,
 				1BA26AD32BB18A9E001ACAA8 /* NewEntryViewController.swift in Sources */,
+				1BA26AD52BB1A48A001ACAA8 /* ShowJournalEntryViewController.swift in Sources */,
 				1BA26A9D2BB17D50001ACAA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

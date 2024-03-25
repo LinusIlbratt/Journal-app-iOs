@@ -16,7 +16,11 @@ class NewEntryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        journalEntryTextView.becomeFirstResponder()
+    }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func save(_ sender: UIBarButtonItem) {
@@ -25,6 +29,8 @@ class NewEntryViewController: UIViewController {
             
             journal?.add(entry: newEntry)
         }
+        
+        navigationController?.popViewController(animated: true)
     }
     
 

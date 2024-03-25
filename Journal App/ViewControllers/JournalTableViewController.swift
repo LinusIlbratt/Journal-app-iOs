@@ -10,6 +10,7 @@ import UIKit
 class JournalTableViewController: UITableViewController {
     
     let newEntrySegue = "newEntrySegue"
+    let showEntrySegue = "showJournalEntry"
     
     var journal = Journal()
 
@@ -39,7 +40,7 @@ class JournalTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "journalEntryCell", for: indexPath)
 
         let journalEntry = journal.entry(index: indexPath.row)
-        cell.textLabel?.text = journalEntry?.content
+        cell.textLabel?.text = journalEntry?.date
 
         return cell
     }
@@ -88,6 +89,13 @@ class JournalTableViewController: UITableViewController {
         if segue.identifier == newEntrySegue {
             let destinationVC = segue.destination as? NewEntryViewController
             destinationVC?.journal = journal
+        } else if (segue.identifier == showEntrySegue) {
+            guard let destinationVC = segue.destination as? ShowJournalEntryViewController else { return }
+            guard let cell = sender as? UITableViewCell else { return }
+            guard let indexPath = tableView.indexPath(for: cell) else {return}
+            guard let entry = journal.entry(index: indexPath.row) else {return}
+            
+            destinationVC.journalEntry = entry
         }
     }
     
