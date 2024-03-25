@@ -17,6 +17,7 @@
 		1BA26ABE2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ABD2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift */; };
 		1BA26ACB2BB17FB1001ACAA8 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */; };
 		1BA26ACF2BB1816A001ACAA8 /* JournalEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */; };
+		1BA26AD12BB184F7001ACAA8 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA26AD02BB184F7001ACAA8 /* Journal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1BA26ABD2BB17D51001ACAA8 /* Journal_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1BA26ACA2BB17FB1001ACAA8 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryModel.swift; sourceTree = "<group>"; };
+		1BA26AD02BB184F7001ACAA8 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				1BA26ACE2BB1816A001ACAA8 /* JournalEntryModel.swift */,
+				1BA26AD02BB184F7001ACAA8 /* Journal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA26ACF2BB1816A001ACAA8 /* JournalEntryModel.swift in Sources */,
+				1BA26AD12BB184F7001ACAA8 /* Journal.swift in Sources */,
 				1BA26A9B2BB17D50001ACAA8 /* AppDelegate.swift in Sources */,
 				1BA26ACB2BB17FB1001ACAA8 /* JournalTableViewController.swift in Sources */,
 				1BA26A9D2BB17D50001ACAA8 /* SceneDelegate.swift in Sources */,
