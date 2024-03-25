@@ -9,9 +9,7 @@ import UIKit
 
 class JournalTableViewController: UITableViewController {
     
-    var journal = [JournalEntry(content: "Jag vaknade."), 
-                   JournalEntry(content: "Jag åt frukost."),
-                   JournalEntry(content: "Jag programmerade hela dagen.") ]
+    var journal = Journal()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +36,8 @@ class JournalTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "journalEntryCell", for: indexPath)
 
-        let journalEntry = journal[indexPath.row]
-        cell.textLabel?.text = journalEntry.content
+        let journalEntry = journal.entry(index: indexPath.row)
+        cell.textLabel?.text = journalEntry?.content
 
         return cell
     }
