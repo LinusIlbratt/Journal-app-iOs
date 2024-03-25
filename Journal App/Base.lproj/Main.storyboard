@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="tKO-W7-Ats">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gg2-AN-OJz">
                             <connections>
-                                <segue destination="jyc-OD-cFZ" kind="show" id="E2S-e2-Czp"/>
+                                <segue destination="jyc-OD-cFZ" kind="show" identifier="newEntrySegue" id="E2S-e2-Czp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="376.3358778625954" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--New Entry View Controller-->
         <scene sceneID="TRi-Nq-VUE">
             <objects>
-                <viewController id="jyc-OD-cFZ" sceneMemberID="viewController">
+                <viewController id="jyc-OD-cFZ" customClass="NewEntryViewController" customModule="Journal_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CJu-94-iOh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,8 +70,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EbI-eQ-dYp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ZCV-JE-D3u"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ZCV-JE-D3u">
+                            <connections>
+                                <action selector="save:" destination="jyc-OD-cFZ" id="nox-GX-o8c"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="journalEntryTextView" destination="VxK-n6-g7E" id="lcF-Ya-wsx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWz-oo-oSy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
