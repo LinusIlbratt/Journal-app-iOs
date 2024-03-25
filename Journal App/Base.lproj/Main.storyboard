@@ -50,10 +50,28 @@
                     <view key="view" contentMode="scaleToFill" id="CJu-94-iOh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VxK-n6-g7E">
+                                <rect key="frame" x="10" y="113" width="373" height="695"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0yg-yb-LVH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0yg-yb-LVH" firstAttribute="bottom" secondItem="VxK-n6-g7E" secondAttribute="bottom" constant="10" id="KzE-5D-c5C"/>
+                            <constraint firstItem="VxK-n6-g7E" firstAttribute="leading" secondItem="0yg-yb-LVH" secondAttribute="leading" constant="10" id="Lap-yA-2zO"/>
+                            <constraint firstItem="VxK-n6-g7E" firstAttribute="top" secondItem="0yg-yb-LVH" secondAttribute="top" constant="10" id="RfO-MS-HfZ"/>
+                            <constraint firstItem="0yg-yb-LVH" firstAttribute="trailing" secondItem="VxK-n6-g7E" secondAttribute="trailing" constant="10" id="tdZ-Zp-Ghc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EbI-eQ-dYp"/>
+                    <navigationItem key="navigationItem" id="EbI-eQ-dYp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ZCV-JE-D3u"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWz-oo-oSy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +97,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
